@@ -5,7 +5,7 @@ This sample demonstrates how to deploy and run Github runners with AWS Codebuild
 ## Prerequisites
 
 1. Create a connexion between AWS and your github account/organization, to do this you need to go in the console `Developer Tools > Connections > Create connection`
-2. Set the connexion as [the default connexion](https://eu-west-1.console.aws.amazon.com/codesuite/codebuild/sourceCredentials/default?provider=github&region=eu-west-1) `https://**your-region**.console.aws.amazon.com/codesuite/codebuild/sourceCredentials/default?provider=github&region=eu-west-1`
+2. Set the connexion as [the default connexion](https://eu-west-1.console.aws.amazon.com/codesuite/codebuild/sourceCredentials/default?provider=github&region=eu-west-1) `https://**your-region**.console.aws.amazon.com/codesuite/codebuild/sourceCredentials/default?provider=github&region=**your-region**`
 ## Architecture diagram
 
 ![infra-diagrams](./docs/architecture/terraform-aws-codebuild-hosted-github-action-runner.png)
