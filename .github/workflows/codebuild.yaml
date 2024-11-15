@@ -1,0 +1,16 @@
+name: codebuild-test
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on:
+      "codebuild-test-terraform-aws-codebuild-hosted-github-action-runner-${{ github.run_id }}-${{
+      github.run_attempt }}-al2-5.0-small"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
